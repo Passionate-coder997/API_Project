@@ -60,3 +60,11 @@ Sbtn.addEventListener('click', () => {
             }
         });
 });
+// KeyBoard Shortcut
+document.addEventListener('keyup', keyUpHandler, false);
+
+function keyUpHandler(e) {
+    if (e.keyCode === 13) {
+        Sbtn.click();
+    }
+}
